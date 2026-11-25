@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#082f27"><meta name="description" content="صدقة جارية على روح المرحوم والمغفور له بإذن الله أحمد جمال">
+<title>صدقة جارية</title><link rel="manifest" href="manifest.webmanifest"><link rel="icon" type="image/png" sizes="512x512" href="icon.png"><link rel="apple-touch-icon" href="icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><a class="brand" href="#" id="homeLink"><span>۞</span> صدقة جارية</a><div class="head-actions"><button id="themeToggle" class="icon-btn" aria-label="تغيير المظهر">☾</button></div></header>
+<main class="container">
+<section class="hero">
+ <div class="ornament">۞</div><p class="eyebrow">عملٌ يُرجى ثوابه</p><h1>صدقة جارية</h1>
+ <p class="dedication">صدقة جارية على روح المرحوم والمغفور له بإذن الله <strong>أحمد جمال</strong></p>
+ <div class="hero-line"></div><p class="hero-note">اللهم اجعل هذا العمل خالصًا لوجهك الكريم، وانفع به</p>
+</section>
+<section class="prayer-card">
+ <div><p class="eyebrow">مواقيت الصلاة</p><h2 id="prayerCityTitle">مواقيت الصلاة</h2>
+ <div class="city-row"><input id="cityInput" placeholder="المدينة (مثال: Mallawi)" value="Mallawi" aria-label="المدينة"><button id="loadPrayer" class="primary-btn">عرض المواقيت</button></div>
+ <p class="muted" id="prayerStatus">سيتم عرض مواقيت ملوي – المنيا تلقائيًا.</p><div class="control-row prayer-actions"><button id="enablePrayerAlerts" class="primary-btn">تفعيل تنبيهات الصلاة</button><button id="testAdhan" class="secondary-btn">تجربة صوت الأذان</button></div><p class="source" id="alertStatus">التنبيهات تعمل أثناء بقاء الموقع مفتوحًا. صوت التجربة من <a href="https://commons.wikimedia.org/wiki/File:Adhan.ogg" target="_blank" rel="noopener">Wikimedia Commons (CC0)</a>. لا يضمن المتصفح تشغيل الأذان بعد إغلاق الموقع.</p><audio id="adhanAudio" preload="none"></audio></div>
+ <div class="prayer-grid" id="prayerGrid"><div><span>الفجر</span><b>—:—</b></div><div><span>الشروق</span><b>—:—</b></div><div><span>الظهر</span><b>—:—</b></div><div><span>العصر</span><b>—:—</b></div><div><span>المغرب</span><b>—:—</b></div><div><span>العشاء</span><b>—:—</b></div></div>
+</section>
+<section class="section-heading"><p class="eyebrow">أبواب الخير</p><h2>تصفّح أقسام الموقع</h2></section>
+<nav class="tiles" id="tiles" aria-label="أقسام الموقع">
+<button class="tile" data-section="quran"><span class="tile-icon">۞</span><b>القرآن الكريم</b><small>مصحف صفحة بصفحة</small></button>
+<button class="tile" data-section="audio"><span class="tile-icon">♫</span><b>الاستماع للقرآن</b><small>اختيار القارئ والسورة</small></button>
+<button class="tile" data-section="hadith"><span class="tile-icon">❖</span><b>الأحاديث</b><small>أحاديث مع المصدر</small></button>
+<button class="tile" data-section="dua"><span class="tile-icon">🤲</span><b>الأدعية</b><small>أدعية من القرآن والسنة</small></button>
+<button class="tile" data-section="adhkar"><span class="tile-icon">☼</span><b>الأذكار</b><small>أذكار يومية</small></button>
+<button class="tile" data-section="tasbeeh"><span class="tile-icon">◉</span><b>المسبحة الإلكترونية</b><small>عداد محفوظ على جهازك</small></button>
+<button class="tile" data-section="qibla"><span class="tile-icon">⌖</span><b>اتجاه القبلة</b><small>باستخدام موقعك</small></button>
+<button class="tile" data-section="saved"><span class="tile-icon">♡</span><b>المحفوظات</b><small>آخر صفحة وعناصر محفوظة</small></button>
+<button class="tile" data-section="khatma"><span class="tile-icon">📖</span><b>ختمة القرآن</b><small>متابعة تقدم القراءة</small></button>
+<button class="tile" data-section="ruqyah"><span class="tile-icon">✧</span><b>الرقية الشرعية</b><small>آيات من القرآن الكريم</small></button>
+<button class="tile" data-section="hijri"><span class="tile-icon">☾</span><b>التقويم الهجري</b><small>التاريخ الهجري اليوم</small></button>
+</nav>
+<section id="contentPanel" class="content-panel" hidden>
+ <div class="panel-top"><button id="backBtn" class="back-btn">→ رجوع للأقسام</button><button id="saveCurrent" class="secondary-btn" hidden>♡ حفظ</button></div>
+ <h2 id="panelTitle"></h2><div id="panelBody"></div>
+</section>
+</main>
+<footer><p>اللهم تقبّل هذا العمل واجعله صدقة جارية.</p><small>صدقة جارية على روح المرحوم والمغفور له بإذن الله أحمد جمال</small></footer>
+<script src="app.js"></script>
+</body></html>
